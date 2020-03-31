@@ -6,9 +6,13 @@
 		background-size: cover;
 		background-attachment: fixed; 
  }
-
- .a {
-	 text-decoration: none;
+.entrep{
+	background-color: grey;
+}
+.entrep:hover {
+	background-color: #85EA4C;
+	color: white;
+	text-decoration: none;
  }
  .global{
  	display: flex;
@@ -49,15 +53,38 @@
 .element3{
 		margin-left: 140px;
 }
-
-a{ 		color: white; }
-.entreprise{		color: #009DFB ; }
+.textlist
+{
+	color: white;	
+	background-color: rgb(110, 110, 110);
+	border: solid black;
+	transition: 0.2s;
+}
+.textlist:hover
+{
+	background-color: rgb(76, 145, 234);
+	color: white;
+	text-decoration: none;
+}
+.container .card .content a
+{
+	transition: 0.5s;
+}
+.link
+{
+	color: rgb(146, 146, 146);
+	text-decoration: none;
+	transition: 0.5s;
+}
+.entreprise{
+			color: #009DFB ; 
+		}
 
 h1{
 		color: #009DFB;
 		margin-left: 680px;
 }
-h2 { 	color: #009DFB;
+.titre { 	color: #009DFB;
 		font-family:  ;
 		font-size: 60px;
 		background-image: url("img/gradienty.png");
@@ -149,19 +176,131 @@ h4{
 		width: 400px;
 		border:solid grey;		
 }
-
+.rtw_img:hover
+{
+	border: solid black;
+	border-radius: 20px;
+	transform: scale(1.5);
+	transition: 0.5s;
+}
 .qi_img{
 		width: 400px;
 		margin-top: 30px;
 		border:solid grey;
 }
-
+.qi_img:hover
+{
+	border: solid black;
+	border-radius: 20px;
+	transform: scale(1.5);
+	transition: 0.5s;
+}
 .ch_img{
 		width: 400px;
 		margin-top: 20px;
 		border:solid grey;
 }
+.ch_img:hover
+{
+	border: solid black;
+	border-radius: 20px;
+	transform: scale(1.5);
+	transition: 0.5s;
+}
+.container
+{
+	display: flex;
+	justify-content: space-around;
+}
+.container:hover .card
+{
+    transform: scale(.7);
+}
+.container .card
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
 
+}
+.container .card:hover
+{
+    filter: blur(0px);
+    transform: scale(1);
+}
+.container .card:before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .card:hover:before
+{
+    background: rgb(53, 53, 53);
+    transform: scaleY(1.15);
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.container .card:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+.container .card:hover:after
+{
+    transform: scaleY(1.15);
+}
+.container .card:hover
+{
+    z-index: 1;
+}
+.container .card .content
+{
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+.container .card:hover .content
+{
+    color: #fff;
+}
+.container .card .content h2
+{
+    font-size: 37px;
+}
+.container .card .content p
+{
+	font-size: 0.9em;
+	text-align: left;
+}
+.container .card .content a
+{
+	display: inline-block;
+	text-align: left;
+	text-decoration: none;
+
+}
+.container .card:hover .content a
+{
+	background: #2196F3;
+	border: solid black;
+	transition: 0.5s;
+}
 @media all and (max-width: 1200px)
 { 
 	.conteneur{
