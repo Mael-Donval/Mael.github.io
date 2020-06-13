@@ -59,8 +59,8 @@
 	background-color: rgb(110, 110, 110);
 	border: solid black;
 	transition: 0.4s;
-	padding: 2px;
-	border-radius: 2px;
+	padding: 4px;
+	border-radius: 4px;
 }
 .textlist:hover
 {
