@@ -6,7 +6,7 @@
 		background-size: cover;
 		background-attachment: fixed; 
  }
-.entrep{
+/*.entrep{
 	background-color: grey;
 }
 .entrep:hover {
@@ -21,7 +21,7 @@
  	margin: auto;
  	flex-direction: column;
  }
-
+*/
  .conteneur {
 		display: flex;
 		border-width: 3px;
@@ -32,13 +32,14 @@
 		background-color: white;/*-image: url(img/background5.jpg);*/
 		margin-top: 180px;
 		border: solid white;
-		margin-left: -20px;
+		margin-left: auto;
+		margin-right: auto;
 }
 .conteneur2{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		margin-top:100px;
+		margin-top:60px;
 		margin-left: -120px;
 }
 
@@ -58,9 +59,7 @@
 	color: white;	
 	background-color: rgb(110, 110, 110);
 	border: solid black;
-	transition: 0.4s;
-	padding: 4px;
-	border-radius: 4px;
+	transition: 0.2s;
 }
 .textlist:hover
 {
@@ -99,6 +98,10 @@ h3{
     	font-family: Calibri;
 }
 
+.reseautxt{
+	font-size: 15px;
+	color: #82e6ff;
+}
 h4{
 		color: #009DFB;
 		font-size: 40px;
@@ -185,8 +188,8 @@ h4{
 .rtw_img:hover
 {
 	filter: grayscale(0);
-	-webkit-transform: rotate(-8deg);
-	transform: rotate(-5deg);
+	-webkit-transform: rotate(-15deg);
+	transform: rotate(-15deg);
 }
 .qi_img{
 		width: 400px;
@@ -201,8 +204,8 @@ h4{
 {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
-	-webkit-transform: rotate(-8deg);
-	transform: rotate(5deg)
+	-webkit-transform: rotate(-15deg);
+	transform: rotate(15deg)
 }
 .ch_img{
 		width: 400px;
@@ -217,20 +220,22 @@ h4{
 {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
-	-webkit-transform: rotate(-8deg);
-	transform: rotate(-5deg)
+	-webkit-transform: rotate(-15deg);
+	transform: rotate(-15deg)
 }
 .container
 {
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 90px;
-	margin-top: 60px;
+	margin-top: 90px;
 }
+
 .container:hover .card
 {
     transform: scale(.7);
 }
+
 .container .card
 {
     position: relative;
@@ -243,11 +248,13 @@ h4{
     transition: 0.5s;
 
 }
+
 .container .card:hover
 {
     filter: blur(0px);
     transform: scale(1);
 }
+
 .container .card:before
 {
     content: '';
@@ -258,12 +265,14 @@ h4{
     z-index: 1;
     transition: 0.5s;
 }
+
 .container .card:hover:before
 {
     background: rgb(53, 53, 53);
-    transform: scaleY(1.15);
+	transform: scaleY(1.15) ;
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
+
 .container .card:after
 {
     content: '';
@@ -275,14 +284,17 @@ h4{
     transition: 0.5s;
     z-index: 1;
 }
+
 .container .card:hover:after
 {
     transform: scaleY(1.15);
 }
+
 .container .card:hover
 {
     z-index: 1;
 }
+
 .container .card .content
 {
     text-align: center;
@@ -290,14 +302,17 @@ h4{
     padding: 0 20px;
     transition: 0.5s;
 }
+
 .container .card:hover .content
 {
     color: #fff;
 }
+
 .container .card .content h2
 {
     font-size: 37px;
 }
+
 .container .card .content p
 {
 	font-size: 0.9em;
@@ -321,6 +336,10 @@ h4{
 	.conteneur{
 		flex-direction: column;
 		flex-wrap: wrap;
+		justify-content: center;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.container{
 		flex-direction: column;
@@ -331,8 +350,11 @@ h4{
 	.conteneur2{
 		flex-direction: column;
 		flex-wrap: wrap;
+		justify-content: center;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
 		font-size: 10px;
-		margin-left: -145px;
 		border: none ;
 	}
 	
@@ -357,10 +379,14 @@ h4{
 		font-family: capriola;
 	}
 	.images_stage{
+		visibility: hidden;
 		margin-left: 680px;
 	}
 	.titre{
 		font-size: 40px;
+	}
+	.titre2 {
+		font-size: 30px;
 	}
 	.p50{
 		margin-top: 31px;
@@ -377,5 +403,9 @@ h4{
 	}
 	.p80{
 		margin-left: 87px;
-}
+	}
+	.stages_titres{
+		display: flex;
+		flex-direction: column;
+	}
 }
