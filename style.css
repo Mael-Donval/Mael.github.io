@@ -175,9 +175,10 @@ h4{
 		flex-direction: column;
 		justify-content: space-between;
 		margin-left: 640px;		
-		margin-top: -825px;
+		margin-top: -855px;
 }
 .rtw_img{
+		margin-bottom: 50px;
 		width: 400px;
 		filter: grayscale(50%);
 		-webkit-transition: .3s ease-in-out;
